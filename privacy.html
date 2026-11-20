@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi DashKu / DashKu Privacy Policy</title>
+  <meta name="description" content="Kebijakan Privasi aplikasi DashKu: data apa yang diakses, disimpan, dan dikirim.">
+  <meta name="theme-color" content="#0b0c0f">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#0E0F12" d="M24,2a22,22 0,1 1,0 44a22,22 0,1 1,0 -44z"/><path fill="none" stroke="#FF8A1E" stroke-width="3.5" stroke-linecap="round" d="M10.5,34.5A16,16 0,1 1,37.5 34.5"/><path fill="#FFE2B0" d="M23,26.5L33.5,14.5L25.5,28.2Z"/><path fill="#F4F5F7" d="M24,24.5a3,3 0,1 1,0 6a3,3 0,1 1,0 -6z"/></svg> DashKu</a>
+      <nav class="site-nav" aria-label="Navigasi">
+        <a href="./">Beranda</a>
+        <a href="privacy.html" aria-current="page">Kebijakan Privasi</a>
+        <a href="terms.html">Persyaratan Layanan</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+
+    <nav class="lang-switch" aria-label="Bahasa / Language">
+      <a href="#id">Bahasa Indonesia</a>
+      <a href="#en">English</a>
+    </nav>
+
+    <article id="id" lang="id">
+      <h1>Kebijakan Privasi DashKu</h1>
+      <p class="meta">Berlaku sejak: 20 November 2026 · Versi aplikasi yang dicakup: 0.1.x</p>
+
+      <div class="summary">
+        <p><strong>Ringkasan singkat</strong></p>
+        <p>DashKu tidak punya server, tidak memakai akun/login, dan tidak memasang analitik, iklan, atau
+          pelaporan error (crash reporting). Semua data diproses di perangkat Anda. Satu-satunya koneksi internet yang
+          dibuat DashKu adalah untuk mengunduh gambar peta dari server OpenStreetMap.</p>
+      </div>
+
+      <h2>1. Siapa kami</h2>
+      <p>DashKu dikembangkan oleh <strong>Daniel Susanto</strong> (“DashKu”, “kami”), Surabaya, Indonesia.
+        Kontak: <a href="mailto:danielsusanto71@gmail.com">danielsusanto71@gmail.com</a>.</p>
+      <p>Kebijakan ini menjelaskan data apa yang diakses aplikasi Android DashKu (<code>com.dashku.launcher</code>),
+        untuk apa, apa yang disimpan, dan siapa yang mungkin menerimanya.</p>
+
+      <h2>2. Data yang diakses dan untuk apa</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Data</th><th>Untuk apa</th><th>Disimpan?</th><th>Dikirim ke luar perangkat?</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Data">Lokasi akurat (GPS): posisi, kecepatan, arah</td>
+              <td data-label="Untuk apa">Menampilkan kecepatan, arah mata angin, jarak trip, lama jalan, dan posisi di peta. Hanya dipakai selama DashKu tampil di layar; tidak dipakai di latar belakang.</td>
+              <td data-label="Disimpan?">Posisi <strong>tidak</strong> disimpan. Yang disimpan hanya dua angka: total jarak trip dan total lama jalan.</td>
+              <td data-label="Dikirim ke luar perangkat?">Tidak dikirim oleh DashKu. Namun permintaan gambar peta mengungkap area peta di sekitar posisi Anda ke server peta (lihat bagian 4).</td></tr>
+            <tr><td data-label="Data">Info media yang sedang diputar (judul lagu, artis, sampul, status putar)</td>
+              <td data-label="Untuk apa">Menampilkan kartu musik dan tombol putar/jeda/lompat. Memerlukan izin “Akses notifikasi” yang Anda aktifkan sendiri.</td>
+              <td data-label="Disimpan?">Judul, artis, dan sampul <strong>tidak</strong> disimpan. Yang disimpan hanya nama paket aplikasi musik terakhir (mis. <code>com.spotify.music</code>) untuk tombol “Musik”.</td>
+              <td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
+            <tr><td data-label="Data">Isi notifikasi lain</td>
+              <td data-label="Untuk apa">Tidak dipakai. Izin “Akses notifikasi” hanya dipakai untuk membaca sesi media; DashKu tidak membaca, menyimpan, atau memproses isi notifikasi.</td>
+              <td data-label="Disimpan?">Tidak.</td><td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
+            <tr><td data-label="Data">Daftar aplikasi terpasang</td>
+              <td data-label="Untuk apa">Menampilkan laci aplikasi dan mencari aplikasi telepon/musik/peta untuk tombol menu.</td>
+              <td data-label="Disimpan?">Tidak (hanya di memori selama aplikasi berjalan).</td><td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
+            <tr><td data-label="Data">Status Bluetooth dan Wi-Fi</td>
+              <td data-label="Untuk apa">Menampilkan ikon status: hidup/mati, tersambung atau tidak, dan kekuatan sinyal Wi-Fi. DashKu <strong>tidak</strong> membaca nama jaringan Wi-Fi (SSID) atau nama perangkat Bluetooth.</td>
+              <td data-label="Disimpan?">Tidak.</td><td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
+            <tr><td data-label="Data">Volume media</td><td data-label="Untuk apa">Menampilkan dan mengatur volume musik dari bar volume.</td><td data-label="Disimpan?">Tidak.</td><td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
+            <tr><td data-label="Data">Aplikasi terakhir yang dibuka (opsional, izin “Akses penggunaan”)</td>
+              <td data-label="Untuk apa">Hanya untuk pilihan “Jangan ganti kalau sedang navigasi”: memeriksa apakah aplikasi terakhir adalah Google Maps atau Waze. Dibaca hanya saat mobil/layar menyala.</td>
+              <td data-label="Disimpan?">Tidak.</td><td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
+            <tr><td data-label="Data">Log mulai otomatis</td>
+              <td data-label="Untuk apa">Membantu Anda melihat pemicu apa yang dikirim head unit (mis. layar menyala) dan apakah DashKu berhasil tampil.</td>
+              <td data-label="Disimpan?">Ya, maksimal 30 kejadian terakhir: waktu, nama pemicu, hasil, dan alasan.</td><td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
+            <tr><td data-label="Data">Hitungan ketukan tombol tema premium “segera hadir”</td>
+              <td data-label="Untuk apa">Mengukur minat terhadap tema premium.</td>
+              <td data-label="Disimpan?">Ya, sebagai angka di perangkat.</td>
+              <td data-label="Dikirim ke luar perangkat?">Tidak. Saat ini angka ini tidak dikirim ke mana pun. Jika suatu saat akan dikirim, kebijakan ini akan diperbarui terlebih dahulu.</td></tr>
+            <tr><td data-label="Data">Pengaturan aplikasi</td>
+              <td data-label="Untuk apa">Tema yang dipilih, animasi, format jam, pengaturan “buka otomatis”, dan sejenisnya.</td>
+              <td data-label="Disimpan?">Ya.</td><td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>DashKu <strong>tidak</strong> mengumpulkan nama, email, nomor telepon, kontak, foto, mikrofon, atau ID iklan.
+        Tombol mikrofon hanya membuka aplikasi asisten suara milik perangkat; DashKu sendiri tidak merekam suara.</p>
+
+      <h2>3. Apa yang disimpan dan di mana</h2>
+      <p>Semua data di atas yang disimpan berada di <strong>penyimpanan internal aplikasi di perangkat Anda</strong>, yang tidak bisa
+        dibaca aplikasi lain. Termasuk juga cache gambar peta yang sudah diunduh, supaya peta tidak perlu diunduh ulang.</p>
+      <p>Pengaturan “buka otomatis” dan log-nya disimpan di area penyimpanan yang dapat dibaca segera setelah perangkat
+        menyala (sebelum layar kunci dibuka), agar fitur tersebut tetap bekerja. Area ini tetap berada di perangkat Anda.</p>
+      <p><strong>Cadangan Android:</strong> jika fitur cadangan Android/Google di perangkat Anda aktif, sistem Android dapat
+        menyertakan data aplikasi DashKu (misalnya pengaturan dan angka trip) dalam cadangan akun Google Anda. Cadangan ini
+        dibuat dan dikelola oleh Android/Google sesuai pengaturan perangkat Anda; data tersebut tidak dikirim ke DashKu.</p>
+
+      <h2>4. Pihak ketiga</h2>
+      <h3>Server peta OpenStreetMap</h3>
+      <p>Untuk menampilkan peta, DashKu mengunduh gambar peta (“tile”) langsung dari <code>https://tile.openstreetmap.org/</code>,
+        yang dioperasikan oleh OpenStreetMap Foundation. Seperti setiap permintaan internet, server tersebut menerima
+        <strong>alamat IP</strong> Anda, <strong>area dan tingkat zoom peta yang diminta</strong> (yang mencerminkan perkiraan
+        lokasi Anda), dan identitas aplikasi (<code>com.dashku.launcher</code>). Data ini diproses sesuai
+        <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">Kebijakan Privasi OpenStreetMap Foundation</a>.
+        Data peta © kontributor OpenStreetMap.</p>
+      <h3>Google Play</h3>
+      <p>DashKu didistribusikan melalui Google Play. Google dapat memproses data terkait pemasangan, pembaruan, dan
+        (jika nanti tersedia) pembelian dalam aplikasi, serta laporan error/kinerja dari Android jika Anda mengizinkannya
+        di perangkat. Hal ini diatur oleh <a href="https://policies.google.com/privacy" rel="noopener">Kebijakan Privasi Google</a>.
+        DashKu tidak menerima data pembayaran Anda.</p>
+      <h3>Aplikasi lain yang dibuka DashKu</h3>
+      <p>Tombol peta, Musik, Navigasi, Telepon, mikrofon, dan pengaturan hanya <strong>membuka aplikasi lain</strong>
+        (mis. Google Maps, Waze, Spotify, aplikasi telepon, asisten suara, Pengaturan Android). DashKu tidak menyertakan
+        lokasi atau data lain saat membukanya. Penggunaan aplikasi tersebut tunduk pada kebijakan privasi masing-masing.</p>
+
+      <h2>5. Izin Android yang diminta</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Izin</th><th>Alasan</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Izin">Lokasi akurat &amp; perkiraan (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>)</td><td data-label="Alasan">Speedometer, arah, trip, dan posisi di peta. Hanya saat DashKu tampil.</td></tr>
+            <tr><td data-label="Izin">Internet (<code>INTERNET</code>)</td><td data-label="Alasan">Mengunduh gambar peta OpenStreetMap.</td></tr>
+            <tr><td data-label="Izin">Status jaringan &amp; Wi-Fi (<code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>)</td><td data-label="Alasan">Ikon status Wi-Fi.</td></tr>
+            <tr><td data-label="Izin">Bluetooth / Perangkat sekitar (<code>BLUETOOTH</code>, <code>BLUETOOTH_CONNECT</code>)</td><td data-label="Alasan">Ikon status Bluetooth (hidup/mati, tersambung).</td></tr>
+            <tr><td data-label="Izin">Akses notifikasi (diaktifkan manual oleh Anda)</td><td data-label="Alasan">Membaca info lagu yang sedang diputar untuk kartu musik.</td></tr>
+            <tr><td data-label="Izin">Akses penggunaan (<code>PACKAGE_USAGE_STATS</code>, opsional, diaktifkan manual)</td><td data-label="Alasan">Pilihan “Jangan ganti kalau sedang navigasi”.</td></tr>
+            <tr><td data-label="Izin">Tampil di atas aplikasi lain (<code>SYSTEM_ALERT_WINDOW</code>, opsional)</td><td data-label="Alasan">Agar DashKu bisa tampil sendiri saat mobil menyala (Android 10+). DashKu tidak menggambar jendela di atas aplikasi lain.</td></tr>
+            <tr><td data-label="Izin">Berjalan saat perangkat menyala (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td data-label="Alasan">Fitur “buka otomatis saat mobil menyala”.</td></tr>
+            <tr><td data-label="Izin">Layanan latar depan (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>)</td><td data-label="Alasan">Layanan ringan bernotifikasi “DashKu siap” untuk mendeteksi layar menyala. Layanan ini tidak memakai lokasi.</td></tr>
+            <tr><td data-label="Izin">Notifikasi (<code>POST_NOTIFICATIONS</code>, <code>USE_FULL_SCREEN_INTENT</code>)</td><td data-label="Alasan">Notifikasi “DashKu siap” dan cadangan “Ketuk untuk buka DashKu”.</td></tr>
+            <tr><td data-label="Izin">Melihat aplikasi terpasang (deklarasi <code>&lt;queries&gt;</code>)</td><td data-label="Alasan">Laci aplikasi dan tombol Musik/Navigasi/Telepon.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Anda dapat mencabut izin kapan saja di Pengaturan Android. Fitur terkait akan berhenti bekerja, tetapi bagian lain DashKu tetap bisa dipakai.</p>
+
+      <h2>6. Kami tidak menjual data</h2>
+      <p>DashKu tidak menjual, menyewakan, atau membagikan data pribadi Anda kepada siapa pun, dan tidak memakainya untuk iklan.</p>
+
+      <h2>7. Keamanan</h2>
+      <p>Data disimpan di penyimpanan internal aplikasi yang dilindungi sistem Android. Karena DashKu tidak mengirim data
+        ke server kami, tidak ada salinan data Anda di pihak kami.</p>
+
+      <h2>8. Anak-anak</h2>
+      <p>DashKu ditujukan untuk pengemudi dan pemilik kendaraan, bukan untuk anak-anak di bawah 13 tahun. Kami tidak dengan sengaja
+        mengumpulkan data dari anak-anak, dan memang tidak mengumpulkan data pribadi dari siapa pun ke server kami.</p>
+
+      <h2>9. Cara menghapus data</h2>
+      <ul>
+        <li><strong>Reset trip:</strong> Pengaturan DashKu → Reset trip, atau tekan lama kotak trip.</li>
+        <li><strong>Hapus log mulai otomatis:</strong> Pengaturan DashKu → Log mulai otomatis → Hapus log.</li>
+        <li><strong>Hapus semua data DashKu:</strong> Pengaturan Android → Aplikasi → DashKu → Penyimpanan → Hapus data,
+          atau <strong>uninstall</strong> DashKu. Ini menghapus semua data di atas termasuk cache peta.</li>
+        <li><strong>Cadangan Google:</strong> cadangan yang dibuat Android dapat dihapus melalui pengaturan cadangan akun Google Anda.</li>
+      </ul>
+      <p>Karena kami tidak menyimpan data Anda di server, tidak ada data di pihak kami yang perlu dihapus. Anda tetap boleh menghubungi kami jika ada pertanyaan.</p>
+
+      <h2>10. Perubahan kebijakan</h2>
+      <p>Jika DashKu berubah (misalnya menambah fitur yang mengirim data), kebijakan ini akan diperbarui di halaman ini
+        <strong>sebelum</strong> perubahan tersebut berlaku, dan tanggal “Berlaku sejak” di atas akan diganti.</p>
+
+      <h2>11. Kontak</h2>
+      <p>DashKu: Daniel Susanto, Surabaya, Indonesia<br>
+        Email: <a href="mailto:danielsusanto71@gmail.com">danielsusanto71@gmail.com</a></p>
+    </article>
+
+    <article id="en" lang="en" class="lang-divider">
+      <h1>DashKu Privacy Policy</h1>
+      <p class="meta">Effective date: 20 November 2026 · App versions covered: 0.1.x</p>
+
+      <div class="summary">
+        <p><strong>In short</strong></p>
+        <p>DashKu has no servers, no accounts/login, and no analytics, advertising, or crash-reporting SDKs. All data is
+          processed on your device. The only internet connection DashKu makes is to download map images from the
+          OpenStreetMap tile server.</p>
+      </div>
+
+      <h2>1. Who we are</h2>
+      <p>DashKu is developed by <strong>Daniel Susanto</strong> (“DashKu”, “we”), Surabaya, Indonesia.
+        Contact: <a href="mailto:danielsusanto71@gmail.com">danielsusanto71@gmail.com</a>.</p>
+      <p>This policy explains what data the DashKu Android app (<code>com.dashku.launcher</code>) accesses, why, what it
+        stores, and who may receive it.</p>
+
+      <h2>2. Data accessed and why</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Data</th><th>Purpose</th><th>Stored?</th><th>Leaves the device?</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Data">Precise location (GPS): position, speed, bearing</td>
+              <td data-label="Purpose">Shows speed, compass direction, trip distance, driving time, and your position on the map. Used only while DashKu is on screen; not used in the background.</td>
+              <td data-label="Stored?">Your position is <strong>not</strong> stored. Only two numbers are stored: total trip distance and total driving time.</td>
+              <td data-label="Leaves the device?">Not sent by DashKu. However, map image requests reveal the map area around your position to the map server (see section 4).</td></tr>
+            <tr><td data-label="Data">Now-playing media info (song title, artist, cover art, playback state)</td>
+              <td data-label="Purpose">Shows the music card and play/pause/skip buttons. Requires the “Notification access” permission, which you enable yourself.</td>
+              <td data-label="Stored?">Title, artist and cover art are <strong>not</strong> stored. Only the package name of the last music app (e.g. <code>com.spotify.music</code>) is stored, for the “Music” button.</td>
+              <td data-label="Leaves the device?">No.</td></tr>
+            <tr><td data-label="Data">Content of other notifications</td>
+              <td data-label="Purpose">Not used. Notification access is used only to read media sessions; DashKu does not read, store, or process notification content.</td>
+              <td data-label="Stored?">No.</td><td data-label="Leaves the device?">No.</td></tr>
+            <tr><td data-label="Data">List of installed apps</td>
+              <td data-label="Purpose">Shows the app drawer and finds the phone/music/maps apps for the menu buttons.</td>
+              <td data-label="Stored?">No (kept in memory while the app runs).</td><td data-label="Leaves the device?">No.</td></tr>
+            <tr><td data-label="Data">Bluetooth and Wi-Fi status</td>
+              <td data-label="Purpose">Shows status icons: on/off, connected or not, and Wi-Fi signal strength. DashKu does <strong>not</strong> read Wi-Fi network names (SSID) or Bluetooth device names.</td>
+              <td data-label="Stored?">No.</td><td data-label="Leaves the device?">No.</td></tr>
+            <tr><td data-label="Data">Media volume</td><td data-label="Purpose">Shows and changes music volume from the volume bar.</td><td data-label="Stored?">No.</td><td data-label="Leaves the device?">No.</td></tr>
+            <tr><td data-label="Data">Last foreground app (optional, “Usage access” permission)</td>
+              <td data-label="Purpose">Only for the “Don't switch while navigating” option: checks whether the last app was Google Maps or Waze. Read only when the car/screen turns on.</td>
+              <td data-label="Stored?">No.</td><td data-label="Leaves the device?">No.</td></tr>
+            <tr><td data-label="Data">Auto-start log</td>
+              <td data-label="Purpose">Helps you see which triggers your head unit sends (e.g. screen on) and whether DashKu appeared.</td>
+              <td data-label="Stored?">Yes, up to the last 30 events: time, trigger name, result, and reason.</td><td data-label="Leaves the device?">No.</td></tr>
+            <tr><td data-label="Data">Tap count on “coming soon” premium themes</td>
+              <td data-label="Purpose">Measures interest in premium themes.</td>
+              <td data-label="Stored?">Yes, as a number on the device.</td>
+              <td data-label="Leaves the device?">No. This number is currently not sent anywhere. If that ever changes, this policy will be updated first.</td></tr>
+            <tr><td data-label="Data">App settings</td>
+              <td data-label="Purpose">Selected theme, animations, clock format, auto-start settings, and similar.</td>
+              <td data-label="Stored?">Yes.</td><td data-label="Leaves the device?">No.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>DashKu does <strong>not</strong> collect your name, email, phone number, contacts, photos, microphone audio, or advertising ID.
+        The microphone button only opens your device's voice assistant app; DashKu itself does not record audio.</p>
+
+      <h2>3. What is stored and where</h2>
+      <p>All stored data listed above is kept in the <strong>app's private internal storage on your device</strong>, which other apps
+        cannot read. This also includes a cache of downloaded map images, so maps don't have to be downloaded again.</p>
+      <p>Auto-start settings and their log are kept in a storage area that can be read right after the device powers on
+        (before the lock screen is unlocked), so the feature keeps working. This area stays on your device.</p>
+      <p><strong>Android backup:</strong> if Android/Google backup is enabled on your device, Android may include DashKu's app
+        data (such as settings and trip numbers) in your Google account backup. This backup is created and managed by
+        Android/Google according to your device settings; the data is not sent to DashKu.</p>
+
+      <h2>4. Third parties</h2>
+      <h3>OpenStreetMap tile server</h3>
+      <p>To display the map, DashKu downloads map images (“tiles”) directly from <code>https://tile.openstreetmap.org/</code>,
+        operated by the OpenStreetMap Foundation. As with any internet request, that server receives your <strong>IP address</strong>,
+        the <strong>map area and zoom level requested</strong> (which reflects your approximate location), and the app identifier
+        (<code>com.dashku.launcher</code>). This data is handled under the
+        <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">OpenStreetMap Foundation Privacy Policy</a>.
+        Map data © OpenStreetMap contributors.</p>
+      <h3>Google Play</h3>
+      <p>DashKu is distributed through Google Play. Google may process data related to installation, updates, and (if offered
+        in the future) in-app purchases, as well as Android crash/performance reports if you allow them on your device. This is
+        governed by the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.
+        DashKu does not receive your payment details.</p>
+      <h3>Other apps opened by DashKu</h3>
+      <p>The map, Music, Navigation, Phone, microphone and settings buttons only <strong>open other apps</strong> (e.g. Google Maps,
+        Waze, Spotify, the phone app, the voice assistant, Android Settings). DashKu does not pass your location or other data
+        when opening them. Those apps are governed by their own privacy policies.</p>
+
+      <h2>5. Android permissions requested</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Permission</th><th>Reason</th></tr></thead>
+          <tbody>
+            <tr><td data-label="Permission">Precise &amp; approximate location (<code>ACCESS_FINE_LOCATION</code>, <code>ACCESS_COARSE_LOCATION</code>)</td><td data-label="Reason">Speedometer, direction, trip, and map position. Only while DashKu is on screen.</td></tr>
+            <tr><td data-label="Permission">Internet (<code>INTERNET</code>)</td><td data-label="Reason">Downloading OpenStreetMap map images.</td></tr>
+            <tr><td data-label="Permission">Network &amp; Wi-Fi state (<code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>)</td><td data-label="Reason">Wi-Fi status icon.</td></tr>
+            <tr><td data-label="Permission">Bluetooth / Nearby devices (<code>BLUETOOTH</code>, <code>BLUETOOTH_CONNECT</code>)</td><td data-label="Reason">Bluetooth status icon (on/off, connected).</td></tr>
+            <tr><td data-label="Permission">Notification access (enabled manually by you)</td><td data-label="Reason">Reading now-playing info for the music card.</td></tr>
+            <tr><td data-label="Permission">Usage access (<code>PACKAGE_USAGE_STATS</code>, optional, enabled manually)</td><td data-label="Reason">The “Don't switch while navigating” option.</td></tr>
+            <tr><td data-label="Permission">Display over other apps (<code>SYSTEM_ALERT_WINDOW</code>, optional)</td><td data-label="Reason">Lets DashKu bring itself to the front when the car turns on (Android 10+). DashKu does not draw windows over other apps.</td></tr>
+            <tr><td data-label="Permission">Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td data-label="Reason">The “open automatically when the car turns on” feature.</td></tr>
+            <tr><td data-label="Permission">Foreground service (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>)</td><td data-label="Reason">A lightweight service with a “DashKu ready” notification that detects the screen turning on. It does not use location.</td></tr>
+            <tr><td data-label="Permission">Notifications (<code>POST_NOTIFICATIONS</code>, <code>USE_FULL_SCREEN_INTENT</code>)</td><td data-label="Reason">The “DashKu ready” notification and the “Tap to open DashKu” fallback.</td></tr>
+            <tr><td data-label="Permission">Seeing installed apps (<code>&lt;queries&gt;</code> declaration)</td><td data-label="Reason">App drawer and the Music/Navigation/Phone buttons.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>You can revoke permissions at any time in Android Settings. The related feature will stop working, but the rest of DashKu remains usable.</p>
+
+      <h2>6. We do not sell data</h2>
+      <p>DashKu does not sell, rent, or share your personal data with anyone, and does not use it for advertising.</p>
+
+      <h2>7. Security</h2>
+      <p>Data is kept in the app's internal storage, protected by Android. Because DashKu does not send data to our servers,
+        we hold no copy of your data.</p>
+
+      <h2>8. Children</h2>
+      <p>DashKu is intended for drivers and vehicle owners, not for children under 13. We do not knowingly collect data from
+        children, and we do not collect personal data from anyone on our servers.</p>
+
+      <h2>9. How to delete your data</h2>
+      <ul>
+        <li><strong>Reset trip:</strong> DashKu Settings → “Reset trip”, or long-press the trip box.</li>
+        <li><strong>Clear the auto-start log:</strong> DashKu Settings → “Log mulai otomatis” → “Hapus log”.</li>
+        <li><strong>Delete all DashKu data:</strong> Android Settings → Apps → DashKu → Storage → Clear data,
+          or <strong>uninstall</strong> DashKu. This removes all the data above, including the map cache.</li>
+        <li><strong>Google backup:</strong> backups made by Android can be deleted from your Google account backup settings.</li>
+      </ul>
+      <p>Since we keep no data on our servers, there is nothing on our side to delete. You are still welcome to contact us with any questions.</p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>If DashKu changes (for example, adds a feature that sends data), this policy will be updated on this page
+        <strong>before</strong> the change takes effect, and the “Effective date” above will be updated.</p>
+
+      <h2>11. Contact</h2>
+      <p>DashKu: Daniel Susanto, Surabaya, Indonesia<br>
+        Email: <a href="mailto:danielsusanto71@gmail.com">danielsusanto71@gmail.com</a></p>
+    </article>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 DashKu</span>
+      <a href="privacy.html">Kebijakan Privasi / Privacy Policy</a>
+      <a href="terms.html">Persyaratan Layanan / Terms of Service</a>
+      <a href="mailto:danielsusanto71@gmail.com">Kontak / Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
