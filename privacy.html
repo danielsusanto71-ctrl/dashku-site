@@ -29,13 +29,14 @@
 
     <article id="id" lang="id">
       <h1>Kebijakan Privasi DashKu</h1>
-      <p class="meta">Berlaku sejak: 20 November 2026 · Versi aplikasi yang dicakup: 0.1.x</p>
+      <p class="meta">Berlaku sejak: 21 November 2026 · Versi aplikasi yang dicakup: 0.1.x</p>
 
       <div class="summary">
         <p><strong>Ringkasan singkat</strong></p>
         <p>DashKu tidak punya server, tidak memakai akun/login, dan tidak memasang analitik, iklan, atau
-          pelaporan error (crash reporting). Semua data diproses di perangkat Anda. Satu-satunya koneksi internet yang
-          dibuat DashKu adalah untuk mengunduh gambar peta dari server OpenStreetMap.</p>
+          pelaporan error (crash reporting). Semua data diproses di perangkat Anda. Koneksi internet yang dibuat DashKu hanya
+          untuk mengunduh gambar peta dari server OpenStreetMap, dan khusus <strong>versi APK manual</strong> (bukan versi
+          Google Play), untuk memeriksa update di GitHub.</p>
       </div>
 
       <h2>1. Siapa kami</h2>
@@ -53,9 +54,9 @@
               <td data-label="Untuk apa">Menampilkan kecepatan, arah mata angin, jarak trip, lama jalan, dan posisi di peta. Hanya dipakai selama DashKu tampil di layar; tidak dipakai di latar belakang.</td>
               <td data-label="Disimpan?">Posisi <strong>tidak</strong> disimpan. Yang disimpan hanya dua angka: total jarak trip dan total lama jalan.</td>
               <td data-label="Dikirim ke luar perangkat?">Tidak dikirim oleh DashKu. Namun permintaan gambar peta mengungkap area peta di sekitar posisi Anda ke server peta (lihat bagian 4).</td></tr>
-            <tr><td data-label="Data">Info media yang sedang diputar (judul lagu, artis, sampul, status putar)</td>
-              <td data-label="Untuk apa">Menampilkan kartu musik dan tombol putar/jeda/lompat. Memerlukan izin “Akses notifikasi” yang Anda aktifkan sendiri.</td>
-              <td data-label="Disimpan?">Judul, artis, dan sampul <strong>tidak</strong> disimpan. Yang disimpan hanya nama paket aplikasi musik terakhir (mis. <code>com.spotify.music</code>) untuk tombol “Musik”.</td>
+            <tr><td data-label="Data">Info media yang sedang diputar dari aplikasi musik <em>atau video</em> (judul, artis/nama channel, sampul/thumbnail, status putar, nama &amp; ikon aplikasi sumber)</td>
+              <td data-label="Untuk apa">Menampilkan kartu musik, tombol putar/jeda/lompat, dan membuka aplikasi sumber saat kartu diketuk. Dari sesi media (memerlukan izin “Akses notifikasi” yang Anda aktifkan sendiri) dan dari siaran standar pemutar musik bawaan head unit.</td>
+              <td data-label="Disimpan?">Judul, artis, dan gambar <strong>tidak</strong> disimpan. Yang disimpan hanya nama paket aplikasi musik/video terakhir (mis. <code>com.spotify.music</code>) untuk tombol “Musik”. Gambar dari internet tidak diunduh oleh DashKu.</td>
               <td data-label="Dikirim ke luar perangkat?">Tidak.</td></tr>
             <tr><td data-label="Data">Isi notifikasi lain</td>
               <td data-label="Untuk apa">Tidak dipakai. Izin “Akses notifikasi” hanya dipakai untuk membaca sesi media; DashKu tidak membaca, menyimpan, atau memproses isi notifikasi.</td>
@@ -102,6 +103,15 @@
         lokasi Anda), dan identitas aplikasi (<code>com.dashku.launcher</code>). Data ini diproses sesuai
         <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">Kebijakan Privasi OpenStreetMap Foundation</a>.
         Data peta © kontributor OpenStreetMap.</p>
+      <h3>GitHub (hanya versi APK manual)</h3>
+      <p>Versi DashKu yang dipasang manual dari file APK (bukan dari Google Play) memeriksa update paling sering sekali sehari
+        saat ada internet, atau saat Anda menekan “Cek update”, dengan mengunduh <code>version.json</code> dari
+        <code>https://danielsusanto71-ctrl.github.io/dashku-site/</code> (GitHub Pages). Bila Anda memilih “Unduh &amp; pasang”,
+        file APK diunduh dari GitHub Releases repo <code>dashku-site</code> lalu dipasang oleh pemasang aplikasi Android setelah
+        Anda menyetujuinya. Seperti setiap permintaan internet, GitHub menerima <strong>alamat IP</strong> dan versi DashKu
+        (di User-Agent). <strong>Tidak ada data pribadi yang dikirim.</strong> Hal ini diatur oleh
+        <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Pernyataan Privasi GitHub</a>.
+        Versi Google Play tidak memiliki fitur ini; update-nya hanya lewat Google Play.</p>
       <h3>Google Play</h3>
       <p>DashKu didistribusikan melalui Google Play. Google dapat memproses data terkait pemasangan, pembaruan, dan
         (jika nanti tersedia) pembelian dalam aplikasi, serta laporan error/kinerja dari Android jika Anda mengizinkannya
@@ -127,7 +137,8 @@
             <tr><td data-label="Izin">Berjalan saat perangkat menyala (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td data-label="Alasan">Fitur “buka otomatis saat mobil menyala”.</td></tr>
             <tr><td data-label="Izin">Layanan latar depan (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>)</td><td data-label="Alasan">Layanan ringan bernotifikasi “DashKu siap” untuk mendeteksi layar menyala. Layanan ini tidak memakai lokasi.</td></tr>
             <tr><td data-label="Izin">Notifikasi (<code>POST_NOTIFICATIONS</code>)</td><td data-label="Alasan">Notifikasi “DashKu siap” dan cadangan “Ketuk untuk buka DashKu”.</td></tr>
-            <tr><td data-label="Izin">Melihat aplikasi terpasang (deklarasi <code>&lt;queries&gt;</code>)</td><td data-label="Alasan">Laci aplikasi dan tombol Musik/Navigasi/Telepon.</td></tr>
+            <tr><td data-label="Izin">Melihat aplikasi terpasang (deklarasi <code>&lt;queries&gt;</code>)</td><td data-label="Alasan">Laci aplikasi, tombol Musik/Navigasi/Telepon, dan tombol “Tampilan bawaan” (mencari launcher bawaan head unit).</td></tr>
+            <tr><td data-label="Izin">Memasang aplikasi (<code>REQUEST_INSTALL_PACKAGES</code>, <strong>hanya versi APK manual</strong>)</td><td data-label="Alasan">Memasang update DashKu yang Anda unduh lewat “Unduh &amp; pasang”. Selalu meminta persetujuan Anda. Tidak ada di versi Google Play.</td></tr>
           </tbody>
         </table>
       </div>
@@ -164,13 +175,14 @@
 
     <article id="en" lang="en" class="lang-divider">
       <h1>DashKu Privacy Policy</h1>
-      <p class="meta">Effective date: 20 November 2026 · App versions covered: 0.1.x</p>
+      <p class="meta">Effective date: 21 November 2026 · App versions covered: 0.1.x</p>
 
       <div class="summary">
         <p><strong>In short</strong></p>
         <p>DashKu has no servers, no accounts/login, and no analytics, advertising, or crash-reporting SDKs. All data is
-          processed on your device. The only internet connection DashKu makes is to download map images from the
-          OpenStreetMap tile server.</p>
+          processed on your device. DashKu only connects to the internet to download map images from the OpenStreetMap
+          tile server and, in the <strong>manually installed APK version</strong> only (not the Google Play version), to check
+          for updates on GitHub.</p>
       </div>
 
       <h2>1. Who we are</h2>
@@ -188,9 +200,9 @@
               <td data-label="Purpose">Shows speed, compass direction, trip distance, driving time, and your position on the map. Used only while DashKu is on screen; not used in the background.</td>
               <td data-label="Stored?">Your position is <strong>not</strong> stored. Only two numbers are stored: total trip distance and total driving time.</td>
               <td data-label="Leaves the device?">Not sent by DashKu. However, map image requests reveal the map area around your position to the map server (see section 4).</td></tr>
-            <tr><td data-label="Data">Now-playing media info (song title, artist, cover art, playback state)</td>
-              <td data-label="Purpose">Shows the music card and play/pause/skip buttons. Requires the “Notification access” permission, which you enable yourself.</td>
-              <td data-label="Stored?">Title, artist and cover art are <strong>not</strong> stored. Only the package name of the last music app (e.g. <code>com.spotify.music</code>) is stored, for the “Music” button.</td>
+            <tr><td data-label="Data">Now-playing info from music <em>or video</em> apps (title, artist/channel name, cover art/thumbnail, playback state, source app name &amp; icon)</td>
+              <td data-label="Purpose">Shows the music card and play/pause/skip buttons, and opens the source app when the card is tapped. From media sessions (requires the “Notification access” permission, which you enable yourself) and from standard broadcasts of head units' built-in music players.</td>
+              <td data-label="Stored?">Title, artist and images are <strong>not</strong> stored. Only the package name of the last music/video app (e.g. <code>com.spotify.music</code>) is stored, for the “Music” button. DashKu does not download images from the internet.</td>
               <td data-label="Leaves the device?">No.</td></tr>
             <tr><td data-label="Data">Content of other notifications</td>
               <td data-label="Purpose">Not used. Notification access is used only to read media sessions; DashKu does not read, store, or process notification content.</td>
@@ -237,6 +249,15 @@
         (<code>com.dashku.launcher</code>). This data is handled under the
         <a href="https://osmfoundation.org/wiki/Privacy_Policy" rel="noopener">OpenStreetMap Foundation Privacy Policy</a>.
         Map data © OpenStreetMap contributors.</p>
+      <h3>GitHub (manually installed APK version only)</h3>
+      <p>The DashKu version installed manually from an APK file (not from Google Play) checks for updates at most once a day
+        when online, or when you tap “Cek update”, by downloading <code>version.json</code> from
+        <code>https://danielsusanto71-ctrl.github.io/dashku-site/</code> (GitHub Pages). If you choose “Unduh &amp; pasang”
+        (Download &amp; install), the APK file is downloaded from the <code>dashku-site</code> GitHub Releases and installed by
+        the Android package installer after you approve it. As with any internet request, GitHub receives your
+        <strong>IP address</strong> and the DashKu version (in the User-Agent). <strong>No personal data is sent.</strong> This is
+        governed by the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub General Privacy Statement</a>.
+        The Google Play version does not have this feature; it is updated only through Google Play.</p>
       <h3>Google Play</h3>
       <p>DashKu is distributed through Google Play. Google may process data related to installation, updates, and (if offered
         in the future) in-app purchases, as well as Android crash/performance reports if you allow them on your device. This is
@@ -262,7 +283,8 @@
             <tr><td data-label="Permission">Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td data-label="Reason">The “open automatically when the car turns on” feature.</td></tr>
             <tr><td data-label="Permission">Foreground service (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>)</td><td data-label="Reason">A lightweight service with a “DashKu ready” notification that detects the screen turning on. It does not use location.</td></tr>
             <tr><td data-label="Permission">Notifications (<code>POST_NOTIFICATIONS</code>)</td><td data-label="Reason">The “DashKu ready” notification and the “Tap to open DashKu” fallback.</td></tr>
-            <tr><td data-label="Permission">Seeing installed apps (<code>&lt;queries&gt;</code> declaration)</td><td data-label="Reason">App drawer and the Music/Navigation/Phone buttons.</td></tr>
+            <tr><td data-label="Permission">Seeing installed apps (<code>&lt;queries&gt;</code> declaration)</td><td data-label="Reason">App drawer, the Music/Navigation/Phone buttons, and the “Tampilan bawaan” (built-in view) button, which finds the head unit's own launcher.</td></tr>
+            <tr><td data-label="Permission">Install apps (<code>REQUEST_INSTALL_PACKAGES</code>, <strong>manually installed APK version only</strong>)</td><td data-label="Reason">Installing DashKu updates you download via “Unduh &amp; pasang”. Always asks for your approval. Not present in the Google Play version.</td></tr>
           </tbody>
         </table>
       </div>
