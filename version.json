@@ -1,6 +1,6 @@
 {
-  "versionCode": 0,
-  "versionName": "0.0.0",
-  "apkUrl": "https://github.com/danielsusanto71-ctrl/dashku-site/releases/download/v0.0.0/dashku-0.0.0.apk",
-  "catatan": "Belum ada rilis APK manual."
+  "versionCode": 15,
+  "versionName": "0.1.15",
+  "apkUrl": "https://github.com/danielsusanto71-ctrl/dashku-site/releases/download/v0.1.15/dashku-0.1.15.apk",
+  "catatan": "Tombol Tampilan bawaan, panel musik untuk video & pemutar bawaan, mode ringan, dan pemeriksa update."
 }
